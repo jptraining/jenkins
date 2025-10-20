@@ -24,7 +24,7 @@ echo "🔁 Activation de Jenkins au démarrage..."
 sudo systemctl enable jenkins
 
 echo "✅ Vérification du statut de Jenkins..."
-sudo systemctl status jenkins
+#sudo systemctl status jenkins
 
 echo "🔐 Mot de passe initial d'administration Jenkins :"
 sudo cat /var/lib/jenkins/secrets/initialAdminPassword
