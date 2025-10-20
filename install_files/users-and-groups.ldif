@@ -1,0 +1,66 @@
+# Unité organisationnelle : utilisateurs
+dn: ou=people,dc=formation,dc=local
+objectClass: organizationalUnit
+ou: people
+
+# Unité organisationnelle : groupes
+dn: ou=groups,dc=formation,dc=local
+objectClass: organizationalUnit
+ou: groups
+
+# Utilisateur alice (admin)
+dn: cn=alice,ou=people,dc=formation,dc=local
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: alice
+sn: Dupont
+uid: alice
+displayName: Alice Dupont
+mail: alice@formation.local
+userPassword: alice123
+
+# Utilisateur bob (developer)
+dn: cn=bob,ou=people,dc=formation,dc=local
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: bob
+sn: Martin
+uid: bob
+displayName: Bob Martin
+mail: bob@formation.local
+userPassword: bob123
+
+# Utilisateur charlie (tester)
+dn: cn=charlie,ou=people,dc=formation,dc=local
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: charlie
+sn: Leroy
+uid: charlie
+displayName: Charlie Leroy
+mail: charlie@formation.local
+userPassword: charlie123
+
+# Groupe admins
+dn: cn=admins,ou=groups,dc=formation,dc=local
+objectClass: groupOfNames
+cn: admins
+member: cn=alice,ou=people,dc=formation,dc=local
+
+# Groupe developers
+dn: cn=developers,ou=groups,dc=formation,dc=local
+objectClass: groupOfNames
+cn: developers
+member: cn=bob,ou=people,dc=formation,dc=local
+
+# Groupe testers
+dn: cn=testers,ou=groups,dc=formation,dc=local
+objectClass: groupOfNames
+cn: testers
+member: cn=charlie,ou=people,dc=formation,dc=local

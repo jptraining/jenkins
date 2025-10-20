@@ -1,0 +1,11 @@
+# Scripts shell : toujours en LF
+*.sh text eol=lf
+
+# Fichiers de config : LF
+*.yml text eol=lf
+*.yaml text eol=lf
+*.json text eol=lf
+
+# Fichiers binaires : pas de conversion
+*.png binary
+*.jpg binary
