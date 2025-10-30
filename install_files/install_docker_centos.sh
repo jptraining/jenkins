@@ -53,3 +53,11 @@ echo "🎉 Docker et Docker Compose sont installés et prêts à l'emploi sur Ce
 echo "⚙️ Créer le répertoire $JENKINS_HOME"
 sudo mkdir -p $JENKINS_HOME
 sudo chown -R 1000:1000 $JENKINS_HOME
+
+echo "export JENKINS_HOME=$JENKINS_HOME to /home/$user/.bashrc"
+
+echo "export JENKINS_HOME=$JENKINS_HOME" >> /home/$user/.bashrc
+
+sudo -u $user -i source /home/$user/.bashrc
+
+sudo -u $user -i export JENKINS_HOME=$JENKINS_HOME

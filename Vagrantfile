@@ -20,12 +20,6 @@ Vagrant.configure("2") do |config|
       :ip => "192.168.100.110",
       :box => "eurolinux-vagrant/centos-stream-9",
       :ram => 1024
-    },
-    {
-      :hostname => "ubuntu",
-      :ip => "192.168.100.120",
-      :box => "alvistack/ubuntu-25.10",
-      :ram => 1024
     }
   ]
   
