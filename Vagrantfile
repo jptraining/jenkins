@@ -12,14 +12,14 @@ Vagrant.configure("2") do |config|
       :hostname => "jenkins",
       :ip => "192.168.100.100",
       :box => "eurolinux-vagrant/centos-stream-9",
-      :ram => 1024,
-      :port => 80
+      :ram => 4096,
+      :port => 81
     },
     {
       :hostname => "centos",
       :ip => "192.168.100.110",
       :box => "eurolinux-vagrant/centos-stream-9",
-      :ram => 1024
+      :ram => 4096
     }
   ]
   
